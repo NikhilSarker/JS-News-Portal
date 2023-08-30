@@ -15,9 +15,16 @@
   <!-- DAISY AND TAILWIND LINK -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.3/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FONT AWESOME LINK -->
+  <script src="https://kit.fontawesome.com/a2ccbbb96a.js" crossorigin="anonymous"></script>
 
 
   <style>
+    .active{
+      color: #5D5FEF!important;
+      background-color: #EEEFFF;
+      border-radius: 5px;
+    }
      .font_playfair{
       font-family: 'Playfair Display', serif;
 
@@ -27,11 +34,11 @@
     }
   </style>
 </head>
-<body>
+<body class="bg-[#F6F6F6]">
   <div class="max-w-[1166px] m-auto">
     <header>
       <nav>
-        <div class="navbar bg-base-100">
+        <div class="navbar pb-9 border-b-2 border-[#CDCDCD] border-solid">
           <div class="flex-1">
             <a class="btn btn-ghost font_playfair bg-[#5D5FEF] text-white normal-case text-xl">News</a>
             <a class="btn btn-ghost font_playfair normal-case text-xl text-[#5D5FEF]">Portal</a>
@@ -64,9 +71,20 @@
           </div>
         </div>
       </nav>
+
+      <div id="categories_container" class=" flex items-center justify-around pt-8 pb-11">
+        <div>
+          <a  class= "text-[#858585] text-lg font-normal font_roboto px-[10px] py-[5px] hover:text-[#5D5FEF] active" >Home</a>
+        </div>
+        
+
+      </div>
       
     </header>
     <main>
+    <div id="news_details_container">
+
+    </div>
   
     </main>
   </div>
